@@ -1,6 +1,12 @@
 <div class="jumbotron center">
 <h1>Welcome to StyleCheck</h1>
 <p>Share what you wear... </p>
-<p><%= link_to "Login", "#", class: "btn btn-default btn-lg" %>
-<%= link_to "Sign Up", "#", class: "btn btn-primary btn-lg" %></p>
+<% if user_signed_in? %>
+          # show me what you got
+     <% else %>
+       <p>
+         <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+       </p>
+  <% end %>  
 </div>
