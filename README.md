@@ -1,4 +1,4 @@
-# DigiMix 
+# Style Check Demo 
 
 This is a demo app for [*StyleCheck*](http://stylecheck.us)
 
